@@ -1,7 +1,5 @@
 # Bugs da plataforma Beedoo QA Chalenge
 
-Abaixo está uma lista de templates para reportar bugs. Copie e preencha cada seção quando for necessário.
-
 ## Bug 1
 **Resumo do problema:**  
 _Foi verificado que o sistema permitiu cadastrar um curso sem informar o nome do curso._
