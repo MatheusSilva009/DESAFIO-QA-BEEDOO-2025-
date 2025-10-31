@@ -126,3 +126,32 @@ Alto — Falha em operação CRUD compromete a confiabilidade da aplicação, ge
 
 **Navegador utilizado:**
 Google Chrome v.141.0.7390.123 (64-bit)
+
+## Bug 6
+**Resumo do problema:**  
+_Overflow do layout quando a descrição do curso excede 2000 caracteres._
+
+**Cenário de teste:**  
+_CT 08 (BUG) - Validação de limite de caracteres e comportamento responsivo do layout_
+
+**Passos para reproduzir:**  
+1. Acessar a página https://creative-sherbet-a51eac.netlify.app/
+2. Clicar no botão 'cadastrar curso' 
+3. Preencher todos os campos
+4. Inserir 2001 caracteres na descrição
+5. Clicar no botão 'cadastrar curso'
+
+**Resultado obtido:**  
+O componente de exibição do card não está lidando adequadamente com o overflow do texto, causando quebra no layout da interface quando o conteúdo excede o tamanho previsto do container.
+
+**Resultado esperado:**  
+O componente deve implementar:
+1. Validação de limite máximo de caracteres (2000) no frontend
+2. Layout responsivo que se adapte ao conteúdo mantendo a integridade visual
+3. Feedback visual ao usuário quando o limite de caracteres for atingido
+
+**Impacto:**  
+Médio — Compromete a experiência do usuário e a apresentação visual da aplicação, podendo afetar a legibilidade e usabilidade da interface.
+
+**Navegador utilizado:**
+Google Chrome v.141.0.7390.123 (64-bit)
