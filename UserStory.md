@@ -1,10 +1,10 @@
 # User Story — Cadastro de Curso
 
 ## Resumo
-Como membro do time de QA
-Quero validar o fluxo de cadastro de um curso
-Para garantir que o formulário aceite entradas válidas, rejeite entradas inválidas e apresente mensagens claras ao usuário
-
+Como Instrutor de cursos
+  Quero pode cadastrar cursos e lidar com variações no preenchimento do formulário de cadastro de curso 
+  Para pode ofertar cursos para a população interessada
+  
 ## Critérios de Aceitação (derivados dos cenários Gherkin)
 - Dado que eu estou na página "/Cadastrar curso.html", ao preencher todos os campos obrigatórios com valores válidos e enviar, devo ver confirmação de cadastro ou redirecionamento para a lista de cursos.
 - O campo "Nome do curso" é obrigatório; tentativa de envio sem este campo exibe mensagem de erro específica.
